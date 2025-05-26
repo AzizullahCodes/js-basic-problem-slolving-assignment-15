@@ -222,3 +222,120 @@
 // if(age >= 18){if(nationality === 'Pakistani'){console.log('You are eligible for vote')}
 // else{console.log('Not eligible due to not have pakistani nationality')}}
 // else{console.log('Not eligible due to less age')}
+// """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+// ques no 16 
+// Question 2: Number Classification
+// Write a program that takes an integer and checks:
+
+// If it's positive, check if it's even or odd
+
+// If it's negative, print "Negative number"
+
+// If it's zero, print "Zero"
+
+// Use nested if inside the main check for positive.
+// ans 
+// var integer = +prompt('Enter an integer');
+// if(integer > 0){var even = integer % 2;
+//     if (even === 0){console.log('Integer is even')}
+//     else{console.log('integer is odd')}
+// }
+// else if (integer < 0 ){console.log(integer)}
+// else if (integer === 0){console.log(integer)}
+// else{console.log('Invalid entry')}
+// -------------------------------------------------------------------------------------
+// question no 17 
+// Question 3: Password Checker
+// Ask the user to enter a username and password.
+
+// If username is "admin", then check if the password is "1234".
+
+// If both are correct, print "Login successful".
+
+// If the password is wrong, print "Incorrect password".
+
+// If the username is wrong, print "Unknown user".
+// ans 
+// var user_name = prompt('Enter user name in ');
+// if(user_name === 'aziz'){var password = +prompt('Enter your password')
+//     if (password === 876){console.log('Login Successful')}
+//     else{console.log('password is wrong')}
+// }
+// else{console.log('unknown user')}
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// quest no 17 
+// Question 5: Largest of Three Numbers
+// Write a program that takes three numbers and prints the largest among them 
+// using nested if statements only (no Math.max() or similar).
+// ans 
+// var firstNumber = prompt('enter first number');
+// var secondNumber = prompt('enter second number');
+// var thirdNumber = prompt('enter third number');
+// if (firstNumber > secondNumber && firstNumber > thirdNumber){console.log('first number is greater than')}
+// else if (secondNumber > firstNumber && secondNumber >thirdNumber ){console.log('Second number is greatert than')}
+// else{console.log('Third number is greater than all')}
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// quest no 18 
+// You are given an array of numbers. Reverse the array without using loops or the reverse() method.
+// let numbers = [10, 20, 30, 40, 50];
+// var array = [10,20,30,40,50];
+// array.reverse();
+// console.log(array);
+// """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+// ques no 19
+// 🔹 Question:
+// You are given the following array of colors:
+
+// let colors = ["red", "green", "blue", "yellow", "purple", "orange", "pink"];
+// Your task is to use only the splice() method to transform this array into the following:
+
+// ["green", "blue", "black", "purple", "pink"]
+// ans 
+// let colors = ["red", "green", "blue", "yellow", "purple", "orange", "pink"];
+// colors.splice(0,1);
+// console.log(colors);
+// colors.splice(2,1);
+// console.log(colors);
+// var ind = colors.indexOf("orange");
+// console.log(ind);
+// colors.splice(3,1);
+// console.log(colors);
+// colors.splice(2,0,"black");
+// console.log(colors);
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ques no 20
+// You are given this array:
+// let fruits = ["apple", "banana", "cherry", "date", "elderberry"];
+// Your task:
+// Using only the splice() method, rearrange the array to this:
+// ["banana", "cherry", "fig", "apple"]
+// ans 
+// let fruits = ["apple", "banana", "cherry", "date", "elderberry"];
+// fruits.splice(0,1);
+// fruits.pop();
+// fruits.pop();
+// fruits.splice(2,0,"fig","apple");
+// console.log(fruits);
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+// ques no 21
+// You are given this array of numbers:
+// let nums = [100, 200, 300, 400, 500, 600];
+// Your task:
+// Using only splice(), transform it into:
+// [100, 250, 300, 350, 600]
+// ✅ Requirements:
+// Replace 200 with 250
+// Insert 350 after 300
+// Remove 400 and 500
+// ans 
+// let nums = [100, 200, 300, 400, 500, 600];
+// // nums[1] = 250;
+// nums.splice(1,1,250)
+// console.log(nums);
+// nums.splice(3,0,350);
+// console.log(nums);
+// var ind = nums.indexOf(400);
+// console.log(ind);
+// nums.splice(4,2);
+// console.log(nums);
