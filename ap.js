@@ -389,50 +389,107 @@
 // clothes.push("cap");
 // console.log(clothes);
 // ********************************************************************************
-// ques 25
-// 🔹 Problem: Grading System with Conditions
+//  ques 25
+//  🔹 Problem: Grading System with Conditions
 // You are building a grading system. You have a student's marks in three subjects:
 
-// let math = 85;
-// let science = 92;
-// let english = 78;
-// ✅ Your task:
-// Write a program using nested if statements only to:
-
-// Calculate the average marks.
-
-// Then, based on the average:
-
-// If average ≥ 90 → grade = "A+"
-
-// Else if average ≥ 80 → grade = "A"
-
-// Else if average ≥ 70 → grade = "B"
-
-// Else if average ≥ 60 → grade = "C"
-
-// Else → grade = "Fail"
-
-// Additionally:
-
-// 📌 Restrictions:
-
-// ❌ No loops allowed.
-
-// ❌ No array methods.
-
-// ✅ Use only if, else, nested if, math, and variables.
-
-// ans 
-// let math = 85;
+// /let math = 85;
 //  let science = 92;
-//  let english = 78;
-//  var math = +prompt('enter math obtained marks');
-//  var science = +prompt('enter science obtained marks');
-//  var english = +prompt('enter english obtained marks');
-//  var average = (math + science + english) / 3;
-//  if (average >= 90){console.log('Grade A+')}
-//  else if (average >= 80){console.log('Grade A')}
-//  else if (average >= 70){console.log('Grade B')}
-//  else if (average >= 60){console.log('Grade C')}
-//  else{console.log('Fail')}
+// let english = 78;
+//  ✅ Your task:
+//  Write a program using nested if statements only to:
+
+//  Calculate the average marks.
+
+//  Then, based on the average:
+
+//  If average ≥ 90 → grade = "A+"
+
+//  Else if average ≥ 80 → grade = "A"
+
+//  Else if average ≥ 70 → grade = "B"
+
+//  Else if average ≥ 60 → grade = "C"
+
+//  Else → grade = "Fail"
+
+//  Additionally:
+
+//  📌 Restrictions:
+
+//  ❌ No loops allowed.
+
+//  ❌ No array methods.
+
+//  ✅ Use only if, else, nested if, math, and variables.
+
+//  ans 
+//   let math = 85;  let science = 92;  let english = 78;
+   var math = +prompt('enter math obtained marks');
+   var science = +prompt('enter science obtained marks');  var english = +prompt('enter english obtained marks');  var average = (math + science + english) / 3;
+   if (average >= 90){console.log('Grade A+')}   else if (average >= 80){console.log('Grade A')}
+  else if (average >= 70){console.log('Grade B')}
+   else if (average >= 60){console.log('Grade C')}
+  else{console.log('Fail')}
+// **************************************************************************
+// ques no 26
+// 🔸 Problem 3: Traffic Light Decision
+// ans 
+ var enterTrafficLightColor = prompt('Enter color of traffice signal');
+ if(enterTrafficLightColor === 'red'){console.log('stop')}
+ else if (enterTrafficLightColor === 'yellow'){console.log('start your car but not move')}
+ else if(enterTrafficLightColor === 'green'){console.log('move but carefully some people are breaking signal and can give you harm')}
+ else{console.log('Invalid Entry')}
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ques no 27 
+//  🔥 Difficult Problem: Scholarship Eligibility Checker
+// You are building a system to check if a student qualifies for a scholarship based on multiple criteria:
+
+// let totalMarks = 270; // out of 300
+// let hasDisability = false;
+// let familyIncome = 15000; // in your local currency
+// let hasSportsCertificate = true;
+// ✅ Write a program using only nested if statements to determine if the student is eligible for a scholarship.
+
+// 🧠 Conditions:
+// Primary condition:
+
+// If totalMarks is greater than or equal to 270:
+
+// If familyIncome is less than or equal to 20000` → Eligible
+
+// Else if hasDisability is true → Eligible
+
+// Else if hasSportsCertificate is true → Eligible
+
+// Else → Not Eligible
+
+// If totalMarks is between 240 and 269:
+
+// If familyIncome is less than 10000 → Eligible
+
+// Else if hasDisability is true → Eligible
+
+// Else → Not Eligible
+
+// If totalMarks is below 240 → Not Eligible
+
+// ✅ Output should be:
+
+// console.log("Eligible for scholarship");
+
+// console.log("Not eligible for scholarship");
+// ans 
+// var marks = prompt('enter marks you obtained out of 300');
+// if(marks >= 270){var enterFamilyIncome = prompt('enter monthly family income in PKR')
+//     if(enterFamilyIncome <= 20000){var hasDisability = prompt('Have you disability(yes/no)')
+//         if(hasDisability === 'yes'){var hasSportsCertificate = prompt('do you have sport certificate(yes/no)')
+//             if(hasSportsCertificate === 'yes'){console.log('eligible for scholarship')}
+//             else{console.log('Only sports certificate holder is eligible for scholarship')}
+            
+//         }
+//         else{console.log('only disable candidate is eligible for scholarship')}
+//     }
+//     else{console.log('your monthly income is greater than our criteria')}
+// }
+// else{console.log('your marks are low')}
