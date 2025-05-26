@@ -339,3 +339,100 @@
 // console.log(ind);
 // nums.splice(4,2);
 // console.log(nums);
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ques no 22
+// 🔹 Challenging Array Problem: Custom Rearrangement
+// You are given an array of mixed items:
+// let items = ["pen", "pencil", "eraser", "scale", "marker", "sharpener"];
+// Your task is to transform this array into the following:
+// ["marker", "scale", "pen", "pencil"]
+// var items = ["pen", "pencil", "eraser", "scale", "marker", "sharpener"];
+// items.pop();
+// items.splice(2,1);
+// console.log(items);
+// items.reverse();
+// console.log(items);
+// items.pop();
+// console.log(items);
+// items.splice(2,0,"pen");
+// console.log(items);
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ques no 23
+// 🔸 Problem 1: Rebuild the Array
+// let tech = ["mouse", "keyboard", "monitor", "CPU", "printer", "webcam"];
+// Transform it into:
+// ["monitor", "keyboard", "CPU", "tablet"]
+// let tech = ["mouse", "keyboard", "monitor", "CPU", "printer", "webcam"];
+// tech.splice(4,2);
+// tech.splice(0,1);
+// console.log(tech);
+// tech.splice(0,0,"monitor");
+// console.log(tech);
+// tech.splice(2,1);
+// console.log(tech);
+// tech.push("tablet");
+// console.log(tech);
+// **********************************************************************************
+// ques no 24
+// 🔸 Problem 3: Trim and Replace
+// let clothes = ["shirt", "pants", "jacket", "tie", "hat", "belt"];
+// Make it:
+// ["shirt", "pants", "hoodie", "cap"]
+// ✅ Rules:
+// Replace "jacket" with "hoodie"
+// Remove "tie", "hat", and "belt"
+// Insert "cap" at the end
+// ans 
+// let clothes = ["shirt", "pants", "jacket", "tie", "hat", "belt"];
+// clothes[2] = "hoodie";
+// clothes.splice(3);
+// clothes.push("cap");
+// console.log(clothes);
+// ********************************************************************************
+// ques 25
+// 🔹 Problem: Grading System with Conditions
+// You are building a grading system. You have a student's marks in three subjects:
+
+// let math = 85;
+// let science = 92;
+// let english = 78;
+// ✅ Your task:
+// Write a program using nested if statements only to:
+
+// Calculate the average marks.
+
+// Then, based on the average:
+
+// If average ≥ 90 → grade = "A+"
+
+// Else if average ≥ 80 → grade = "A"
+
+// Else if average ≥ 70 → grade = "B"
+
+// Else if average ≥ 60 → grade = "C"
+
+// Else → grade = "Fail"
+
+// Additionally:
+
+// 📌 Restrictions:
+
+// ❌ No loops allowed.
+
+// ❌ No array methods.
+
+// ✅ Use only if, else, nested if, math, and variables.
+
+// ans 
+// let math = 85;
+//  let science = 92;
+//  let english = 78;
+//  var math = +prompt('enter math obtained marks');
+//  var science = +prompt('enter science obtained marks');
+//  var english = +prompt('enter english obtained marks');
+//  var average = (math + science + english) / 3;
+//  if (average >= 90){console.log('Grade A+')}
+//  else if (average >= 80){console.log('Grade A')}
+//  else if (average >= 70){console.log('Grade B')}
+//  else if (average >= 60){console.log('Grade C')}
+//  else{console.log('Fail')}
