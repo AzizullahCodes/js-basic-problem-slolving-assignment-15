@@ -178,3 +178,47 @@
 // Else:
 
 // Show “Incorrect PIN”
+// ans 
+// var enterPin = +prompt('Enter your 4 digit PIN');
+
+// var PIN = 8767;
+// var balance = 800;
+// if(enterPin === PIN){var withdraw = prompt('How much he want to withdraw')
+//     if(withdraw < balance || withdraw === balance){var newBalance = balance - withdraw;
+//         console.log(newBalance)
+//     }
+//     else{console.log('Insufficient Balance')}
+// }
+// else{console.log('Invalid Pin')}
+// *********************************************************************************************
+// quest no 14
+// Question 4: Leap Year Checker
+// Write a program to input a year and check if it's a leap year using nested if:
+
+// A year is a leap year if:
+
+// It is divisible by 4
+
+// ans 
+// var enter_year = +prompt('Eter year');
+// var leap = enter_year % 4;
+// if(leap === 0){console.log(enter_year + ' is a leap year')}
+// else{console.log(enter_year + ' is not a leap year')};
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ques no 15
+// Question 5: Age and Nationality Checker
+// Take a user's age and nationality as input.
+// If age is 18 or above:
+// If nationality is "Pakistani":
+// Print "Eligible to vote"
+// Else:
+// Print "Not eligible due to nationality"
+// Else:
+// Print "Not eligible due to age"
+
+// ans 
+// var age = prompt('Enter your age');
+// var nationality = prompt('Enter your nationality');
+// if(age >= 18){if(nationality === 'Pakistani'){console.log('You are eligible for vote')}
+// else{console.log('Not eligible due to not have pakistani nationality')}}
+// else{console.log('Not eligible due to less age')}
