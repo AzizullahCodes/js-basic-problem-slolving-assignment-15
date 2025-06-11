@@ -424,7 +424,7 @@
 //  ✅ Use only if, else, nested if, math, and variables.
 
 //  ans 
-//   let math = 85;  let science = 92;  let english = 78;
+  // let math = 85;  let science = 92;  let english = 78;
    var math = +prompt('enter math obtained marks');
    var science = +prompt('enter science obtained marks');  var english = +prompt('enter english obtained marks');  var average = (math + science + english) / 3;
    if (average >= 90){console.log('Grade A+')}   else if (average >= 80){console.log('Grade A')}
